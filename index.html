@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Car Service</title>
+    <link rel="shortcut icon" href="src/images/whiteLogo.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .Number {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="bg-white shadow-md" id="Home">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <!-- Logo -->
+        <div>
+          <a href=""
+            ><img src="src/images/logo.png" alt="Logo" class="h-5 lg:h-8"
+          /></a>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden lg:flex space-x-6">
+          <a href="#Home" class="text-blue-500 font-bold">Home</a>
+          <a href="#Servicos" class="text-gray-700 hover:text-blue-500"
+            >Serviços</a
+          >
+          <a href="#Processo" class="text-gray-700 hover:text-blue-500"
+            >Processo</a
+          >
+          <a href="#Precos" class="text-gray-700 hover:text-blue-500">Preços</a>
+          <a href="#Blog" class="text-gray-700 hover:text-blue-500">Blog</a>
+          <a href="#Time" class="text-gray-700 hover:text-blue-500"
+            >Nosso time</a
+          >
+          <a href="#Contato" class="text-gray-700 hover:text-blue-500"
+            >Contato</a
+          >
+        </nav>
+
+        <!-- Call-to-Action Button -->
+        <a
+          href="#"
+          class="bg-blue-500 text-white w-[16rem] px-6 py-2 rounded-md hover:bg-blue-600 transition-all"
+        >
+          Agende o Serviço Agora!
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16">
+      <div
+        class="container mx-auto grid lg:grid-cols-2 items-center gap-8 px-6"
+      >
+        <!-- Left content -->
+        <div class="pl-0 lg:pl-20">
+          <div class="pl-4">
+            <h1 class="text-3xl font-bold text-gray-800 lg:text-5xl">
+              <span class="border-t-4 border-blue-500 font-bold">Carro</span>
+              sem marcas é o nosso orgulho.
+            </h1>
+          </div>
+          <p class="mt-6 pl-4 text-gray-600 leading-relaxed">
+            Confira nossos serviços de limpeza automotiva e saia com o carro brilhando!
+          </p>
+          <a
+            href="#"
+            class="w-[20rem] mt-8 ml-4 inline-block bg-blue-500 text-white px-8 py-3 rounded-md text-lg shadow-md hover:bg-blue-600 transition-all"
+          >
+            Explore nossos serviços →
+          </a>
+          <div
+            class="flex items-center justify-center space-x-4 mt-6 mb-6 pl-4 lg:mb-0 lg:justify-start"
+          >
+            <a href="#" class="text-blue-500 text-3xl hover:text-pink-500">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-blue-500 text-3xl hover:text-blue-900">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-blue-500 text-3xl hover:text-black">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right content -->
+        <div class="relative">
+          <div
+            class="bg-blue-500 absolute -top-2 rounded-full inset-0 w-[60%] z-10 transform translate-x-20 translate-y-0 md:translate-x-40 lg:-top-16 lg:rounded-none lg:-top-10"
+          ></div>
+          <img
+            src="src/images/bmw.png"
+            alt="BMW M3 Car"
+            class="w-full h-auto z-20 relative"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <div class="bg-white py-8 md:py-12" id="Servicos">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 xl:grid-cols-2"
+      >
+        <div class="text-left m-auto">
+          <h2 class="text-4xl font-bold text-gray-900">
+            <span
+              class="text-black border-l-4 border-blue-500 pl-2 absolute z-10 text-5xl ml-[1%]"
+              >Serviços</span
+            >
+            <span
+              class="text-gray-200 absolute -z-4 text-7xl ml-[3%] -mt-4 text-opacity-75 md:text-8xl md:ml-[1.5%] md:-mt-8"
+              >Serviços</span
+            >
+          </h2>
+          <p class="mt-20 ml-6 text-lg text-gray-500">
+            Confira nossa lista de lavagem de carros, cada uma com um toque de
+            profissionalismo
+          </p>
+        </div>
+
+        <div
+          class="mt-10 m-4 grid grid-cols-1 gap-6 md:grid-cols-3 xl:m-0 xl:w-[45rem]"
+        >
+          <!-- Primeiro Card -->
+          <div
+            class="bg-white rounded-md border-2 border-blue-500 shadow-md p-6 text-center"
+          >
+            <h3 class="font-semibold text-gray-900">Lavagem padrão</h3>
+            <p class="mt-4 text-sm text-gray-500">
+              Serviço padrão de limpeza para veículos, abrangendo a remoção de
+              sujeira externa, poeira e manchas, deixando o carro com um brilho
+              renovado.
+            </p>
+          </div>
+          <!-- Card Ativo -->
+          <div
+            class="bg-white rounded-md border-2 border-blue-500 shadow-lg p-6 text-center"
+          >
+            <h3 class="font-semibold text-gray-900">Lavagem Química</h3>
+            <p class="mt-4 text-sm text-gray-500">
+              Utiliza produtos químicos especializados para remover sujeiras
+              difíceis, como manchas de óleo, graxa e resíduos acumulados,
+              garantindo uma limpeza profunda.
+            </p>
+          </div>
+          <!-- Terceiro Card -->
+          <div
+            class="bg-white rounded-md border-2 border-blue-500 shadow-md p-6 text-center"
+          >
+            <h3 class="font-semibold text-gray-900">Lavagem a Vapor</h3>
+            <p class="mt-4 text-sm text-gray-500">
+              Método ecológico que usa vapor quente para higienizar o carro,
+              removendo sujeira, germes e odores sem o uso excessivo de água.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process -->
+    <section
+      id="Processo"
+      class="bg-cover bg-center py-12"
+      style="background-image: url('src/images/banner.jpg')"
+    >
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl text-center text-white">
+          Pr<span class="border-b-4 border-blue-500">oce</span>sso
+        </h2>
+        <div class="grid grid-cols-1 mt-10 lg:grid-cols-4">
+          <!-- Opção 1 -->
+          <div class="flex flex-col items-center mx-4 text-center">
+            <img
+              src="src/images/banco.jpg"
+              alt="Brush, Vacuum"
+              class="w-40 h-40 object-cover rounded-md"
+            />
+            <span
+              class="Number mt-0 text-8xl font-bold text-blue-500 absolute -ml-[50%] md:-ml-[25%] lg:-ml-[13%]"
+              >1</span
+            >
+            <p class="mt-4 mb-4 text-white">
+              Escovar, Aspirar e Limpar o Interior.
+            </p>
+          </div>
+          <!-- Opção 2 -->
+          <div class="flex flex-col items-center mx-4 text-center">
+            <img
+              src="src/images/roda.jpg"
+              alt="Clean Wheels"
+              class="w-40 h-40 object-cover rounded-md"
+            />
+            <span
+              class="Number mt-0 text-8xl font-bold text-blue-500 absolute -ml-[50%] md:-ml-[25%] lg:-ml-[13%]"
+              >2</span
+            >
+            <p class="mt-4 mb-4 text-white">
+              Limpar Rodas e Pneus, Lavar o Exterior, Aplicar Brilho nos Pneus.
+            </p>
+          </div>
+          <!-- Opção 3 -->
+          <div class="flex flex-col items-center mx-4 text-center">
+            <img
+              src="src/images/motor.jpg"
+              alt="Polish Wheels"
+              class="w-40 h-40 object-cover rounded-md"
+            />
+            <span
+              class="Number mt-0 text-8xl font-bold text-blue-500 absolute -ml-[50%] md:-ml-[25%] lg:-ml-[13%]"
+              >3</span
+            >
+            <p class="mt-4 mb-4 text-white">
+              Polir Rodas, Limpar e Tratar os Acabamentos Externos e motor.
+            </p>
+          </div>
+          <!-- Opção 4 -->
+          <div class="flex flex-col items-center mx-4 text-center">
+            <img
+              src="src/images/farol.jpg"
+              alt="Polish Wax"
+              class="w-40 h-40 object-cover rounded-md"
+            />
+            <span
+              class="Number mt-0 text-8xl font-bold text-blue-500 absolute -ml-[50%] md:-ml-[25%] lg:-ml-[13%]"
+              >4</span
+            >
+            <p class="mt-4 mb-4 text-white">
+              Polir e Cera nas Pinturas Externas e faróis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <div class="bg-white py-8 md:py-12" id="Precos">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 xl:grid-cols-2"
+      >
+        <div
+          class="mt-10 m-4 grid grid-cols-1 gap-6 lg:grid-cols-3 xl:m-0 xl:w-[45rem]"
+        >
+          <!-- Primeiro Card -->
+          <div
+            class="bg-white rounded-md border-2 border-blue-500 shadow-lg p-6 text-center flex flex-col h-full"
+          >
+            <h3
+              class="font-semibold text-gray-900 border-l-4 border-blue-500 lg:pl-[9%]"
+            >
+              Limpeza Básica
+            </h3>
+            <h3
+              class="Number font-bold text-gray-900 border-l-4 border-blue-500 text-start text-xl pl-[24%] md:pl-[39.5%] lg:pl-[26%] xl:pl-[16%]"
+            >
+              $24<span
+                class="Number absolute -mt-[1%] text-[1rem] lg:-mt-[0.4%]"
+                >00</span
+              >
+            </h3>
+            <p class="mt-4 text-sm text-gray-500 flex-grow">
+              Serviço essencial de limpeza do veículo, abrangendo as áreas mais
+              visíveis e garantindo um carro mais limpo e com aparência
+              renovada.
+            </p>
+            <button
+              class="w-[100%] mt-4 p-2 rounded-lg border-2 border-blue-500 bg-white text-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition-all"
+            >
+              Mais Informações
+            </button>
+          </div>
+          <!-- Card Ativo -->
+          <div
+            class="bg-white rounded-md border-2 border-blue-500 shadow-lg p-6 text-center flex flex-col h-full"
+          >
+            <h3
+              class="font-semibold text-gray-900 border-l-4 border-blue-500 lg:pl-[9%]"
+            >
+              Limpeza Premium
+            </h3>
+            <h3
+              class="Number font-bold text-gray-900 border-l-4 border-blue-500 text-start text-xl pl-[20%] md:pl-[38%] lg:pl-[22.5%] xl:pl-[10%]"
+            >
+              $44<span
+                class="Number absolute -mt-[1%] text-[1rem] lg:-mt-[0.4%]"
+                >00</span
+              >
+            </h3>
+            <p class="mt-4 text-sm text-gray-500 flex-grow">
+              Limpeza mais detalhada, com produtos de alta qualidade e atenção
+              especial para áreas internas e externas, proporcionando uma
+              experiência superior de cuidado para o carro.
+            </p>
+            <button
+              class="w-[100%] mt-4 p-2 rounded-lg border-2 border-blue-500 bg-white text-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition-all"
+            >
+              Mais Informações
+            </button>
+          </div>
+
+          <!-- Terceiro Card -->
+          <div
+            class="bg-white rounded-md border-2 border-blue-500 shadow-lg p-6 text-center flex flex-col h-full"
+          >
+            <h3
+              class="font-semibold text-gray-900 border-l-4 border-blue-500 lg:pl-[9%]"
+            >
+              Limpeza Completa
+            </h3>
+            <h3
+              class="Number font-bold text-gray-900 border-l-4 border-blue-500 text-start text-xl pl-[19%] md:pl-[37.5%] lg:pl-[21%] xl:pl-[8%]"
+            >
+              $64<span
+                class="Number absolute -mt-[1%] text-[1rem] lg:-mt-[0.4%]"
+                >00</span
+              >
+            </h3>
+            <p class="mt-4 text-sm text-gray-500 flex-grow">
+              Serviço completo que inclui limpeza profunda de todas as áreas do
+              veículo, utilizando as melhores técnicas e produtos para restaurar
+              o brilho e a higienização de cada detalhe.
+            </p>
+            <button
+              class="w-[100%] mt-4 p-2 rounded-lg border-2 border-blue-500 bg-white text-blue-500 hover:bg-blue-500 hover:border-white hover:text-white transition-all"
+            >
+              Mais Informações
+            </button>
+          </div>
+        </div>
+
+        <div class="text-left m-auto mt-10 xl:text-center">
+          <h2 class="text-4xl font-bold text-gray-900">
+            <span
+              class="text-black border-l-4 border-blue-500 pl-2 absolute z-10 text-5xl ml-[1%] xl:-ml-[8.5%]"
+              >Preços</span
+            >
+            <span
+              class="text-gray-200 absolute -z-4 text-7xl ml-[3%] -mt-4 text-opacity-75 md:text-8xl md:ml-[1.5%] md:-mt-8 xl:-ml-[8%]"
+              >Preços</span
+            >
+          </h2>
+          <p class="mt-20 ml-6 text-lg text-gray-500 xl:ml-40">
+            Confira nossa lista de preços para cada opção de lavagem desde
+            básica a completa
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="bg-white py-8 md:py-12" id="Blog">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 xl:grid-cols-2"
+      >
+        <div class="text-left m-auto">
+          <h2 class="text-4xl font-bold text-gray-900">
+            <span
+              class="text-black border-l-4 border-blue-500 pl-2 absolute z-10 text-5xl ml-[1%]"
+              >Blog</span
+            >
+            <span
+              class="text-gray-200 absolute -z-4 text-7xl ml-[3%] -mt-4 text-opacity-75 md:text-8xl md:ml-[1.5%] md:-mt-8"
+              >Blog</span
+            >
+          </h2>
+          <p class="mt-20 ml-6 text-lg text-gray-500">
+            Confira as notícias do mundo automobilista Brasileiro e
+            internacional
+          </p>
+        </div>
+
+        <div
+          class="mt-10 m-4 grid grid-cols-1 gap-6 md:grid-cols-2 xl:m-0 xl:w-[45rem]"
+        >
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="src/images/skyline.jpg"
+              alt="Blog Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Nissan GTR R35 </h3>
+              <p class="text-sm text-gray-500">14.09.2024</p>
+              <p class="mt-2 text-sm text-gray-600">
+                O carro mais cobiçado por amantes de JDM e filmes de corrida
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="src/images/Uno.jpg"
+              alt="Blog Image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Fiat Novo Uno de 300cv</h3>
+              <p class="text-sm text-gray-500">07.11.2024</p>
+              <p class="mt-2 text-sm text-gray-600">
+                O rei das estradas no Brasil! Fiat novo uno 2013 chega a 300cv
+                de potência se modificado!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team & Review Section -->
+    <div class="bg-white py-8 md:py-12" id="Time">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 xl:grid-cols-2"
+      >
+        <div class="text-left m-auto">
+          <h2 class="text-4xl font-bold text-gray-900">
+            <span
+              class="text-black border-l-4 border-blue-500 pl-2 absolute z-10 text-5xl ml-[1%]"
+              >Nosso Time</span
+            >
+            <span
+              class="text-gray-200 absolute -z-4 text-7xl ml-[3%] -mt-4 text-opacity-75 md:text-7xl md:ml-[1.5%] md:-mt-8 xl:-mt-4"
+              >Nosso Time</span
+            >
+          </h2>
+          <p class="mt-20 ml-6 text-lg text-gray-500">
+            Nosso time é composto por profissionais dedicados, confira uma de
+            nossas avaliações
+          </p>
+        </div>
+        <div
+          class="mt-10 m-4 grid grid-cols-1 gap-6 md:grid-cols-2 xl:m-0 xl:w-[45rem]"
+        >
+          <div>
+            <img
+              src="src/images/equipe.jpg"
+              alt="Team Image"
+              class="rounded-lg shadow-lg w-[100%] h-[100%]"
+            />
+          </div>
+          <div class="bg-blue-50 p-6 rounded-lg shadow-lg relative">
+            <p class="text-gray-700 mb-4">
+              Que potência de serviço! Meu carro saiu do lava-jato brilhando,
+              mais limpo do que eu poderia imaginar. Atendimento rápido,
+              eficiente e com uma qualidade que impressiona!
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="src/images/Perfil.jfif"
+                alt="User Image"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <h3 class="text-gray-800 font-semibold">
+                  Clóvis Basílio dos Santos
+                </h3>
+                <p class="text-sm text-gray-500">Cliente</p>
+              </div>
+            </div>
+            <div class="absolute top-6 right-4">
+              <span class="text-blue-600 text-4xl font-bold">“</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8" id="Contato">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="ml-2">
+            <h3 class="text-lg font-bold mb-2">
+              <i
+                class="fa-solid fa-location-dot pr-2"
+                style="color: #ffffff"
+              ></i>
+              Local
+            </h3>
+            <p class="text-sm">
+              706 DOTERS ST. 8 ARLINGTON DR. 509 72W BAY BLVD.
+            </p>
+            <p class="text-sm">+61 123 456 789</p>
+            <p class="text-sm">carservice@demo.com</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-2">
+              <i class="fa-solid fa-link pr-2" style="color: #ffffff"></i>Links
+            </h3>
+            <ul class="text-sm space-y-2 grid grid-cols-2">
+              <li>
+                <a href="#Home"
+                  ><i class="fa-solid fa-house pr-2" style="color: #ffffff"></i
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#Servicos"
+                  ><i
+                    class="fa-solid fa-screwdriver pr-2"
+                    style="color: #ffffff"
+                  ></i
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a href="#Processo"
+                  ><i class="fa-solid fa-car pr-2" style="color: #ffffff"></i
+                  >Processo</a
+                >
+              </li>
+              <li>
+                <a href="#Preco"
+                  ><i
+                    class="fa-solid fa-money-bill-wave pr-2"
+                    style="color: #ffffff"
+                  ></i
+                  >Preço</a
+                >
+              </li>
+              <li>
+                <a href="#Blog"
+                  ><i
+                    class="fa-solid fa-newspaper pr-2"
+                    style="color: #ffffff"
+                  ></i
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#Time"
+                  ><i
+                    class="fa-solid fa-people-group pr-2"
+                    style="color: #ffffff"
+                  ></i
+                  >Nosso Time</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mr-2">
+            <h3 class="text-lg font-bold mb-2">
+              <i class="fa-solid fa-user-plus pr-2" style="color: #ffffff"></i
+              >Redes Sociais
+            </h3>
+            <div
+              class="flex items-center justify-center space-x-4 mt-6 mb-6 pl-4 lg:mb-0 lg:justify-start"
+            >
+              <a href="#" class="text-gray-200 text-3xl hover:text-pink-500">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-200 text-3xl hover:text-blue-900">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="text-gray-200 text-3xl hover:text-black">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container mx-auto mt-6 pt-2 text-sm text-gray-400 text-center border-t-2 border-gray-700"
+        >
+          <p>
+            &copy; 2024, Carservice. ALL RIGHTS RESERVED |
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Terms & Conditions</a
+            >
+            |
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
